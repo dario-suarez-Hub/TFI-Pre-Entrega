@@ -1,0 +1,303 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5C4033;
+    width: 100%;
+    height: 20vh;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+header a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slogan_celeste {
+    display: flex;
+    color: #6dafce;
+    font-style: italic;
+    font-size: 20px;
+    font-family: cursive;
+    padding-right: 120px;
+    padding-top: 8px;
+    text-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.slogan_blanco {
+    display: flex;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-family: cursive;
+    padding-right: 120px;
+    padding-top: 8px;
+    text-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.slogan_argento {
+    display: flex;
+    color: #6dafce;
+    font-style: italic;
+    font-size: 20px;
+    font-family: cursive;
+    padding-right: 120px;
+    padding-top: 8px;
+    text-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+nav {
+    background-color: #50200a;
+    color: #e4e4bf;
+    font-weight: normal;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav .lista_menu {
+    display: flex;
+    height: 6vh;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8B4513, #5C4033);
+}
+
+nav .lista_menu a {
+    color: #F5F5DC;
+    font-family: "Alegreya", serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.lista_menu a:hover {
+    color: #6dafce;
+    border-bottom: 2px solid #6dafce;
+}
+
+.titulo {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    color: #F5F5DC;
+    background: linear-gradient(to right, #7e3d1f, #722c0c);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Special Elite", system-ui;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.presentacion {
+    display: flex;
+    font-family: "Alegreya", serif;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-family: cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(58, 154, 209);
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 8px;
+}
+
+.pie_logo {
+    width: 100%;
+    font-family: "Alegreya";
+    font-size: medium;
+    justify-content: center ;
+    background: 
+        url(../images/logo.png) no-repeat right center / contain,
+        linear-gradient(to right, #8B4513, #5C4033);
+    display: flex;
+    align-items: flex-end;
+    overflow: auto;
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 10px;
+}
+
+.testimonio {
+    height: 100%;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #6dafce;
+    border: 2px solid white;
+    box-shadow: 0px 4px 12px rgba(252, 251, 251, 0.35);
+    border-radius: 80px;
+    padding: 10px;
+    transition: 0.4s ease;
+}
+
+.testimonio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5);
+}
+
+.reseñas .testimonio h3 {
+    font-family: "Special Elite", system-ui;
+    color: black;
+    text-align: center;
+}
+
+.testimonio p {
+    font-family: "Alegreya", serif;
+    color: black;
+    text-align: center;
+}
+
+.reseñas .estrellas {
+    color: gold;
+}
+
+@media (max-width: 768px) {
+    .reseñas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.tarjeta {
+    width: 15%;
+    height: auto;
+    background-color: #080808;
+    border: 2.8px solid #bb5b16;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.8s ease-in;
+}
+
+.tarjeta:hover {
+    width: 22%;
+    height: auto;
+    transform: translateY(-8px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.tarjeta h2 {
+    font-family: "Special Elite", system-ui;
+    color: #f2f7f6;
+    font-size: larger;
+    padding-top: 8px;
+}
+
+.tarjeta p {
+    font-family: "Alegreya", serif;
+    color: #6dafce;
+}
+
+.tarjeta .precio {
+    font-size: 26px;
+    font-weight: bold;
+    color:#e5b95f;
+    margin: 15px 0;
+}
+
+.tarjeta button {
+    background-color: #2d51a0;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tarjeta button:hover {
+    background-color: #bb5b16;
+    transform: scale(1.03);
+}
+
+#contacto form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 30px;
+    background-color: #080808;
+    border: 2px solid #bb5b16;
+    border-radius: 20px;
+}
+
+#contacto label {
+    color: #F5F5DC;
+    font-family: "Alegreya", serif;
+    align-self: center;
+}
+
+#mensaje {
+    min-height: 120px;
+}
+
+@media (max-width: 768px) {
+    #contacto form {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

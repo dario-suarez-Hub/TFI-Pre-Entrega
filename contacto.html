@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>El Forjador: Bienvenid@</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="./images/logo_horizontal.png"
+            alt="logo horizontal de El Forjador">
+        </a>
+            
+        <p>
+            <span class="slogan_celeste">EBANISTERÍA</span>
+            <span class="slogan_blanco">ARTÍSTICA</span>
+            <span class="slogan_argento">Y ARGENTA</span>
+        </p>
+    </header>
+    <nav>
+        <section>
+            <ul class="lista_menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./carrito.html">Carrito de Compras</a></li>
+                <li><a href="./sobre-nosotros.html">Conocenos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <h1 class="titulo">NUESTRO CONTACTO@</h1>
+
+        <section>
+            <p class="presentacion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora voluptates obcaecati et debitis provident totam qui explicabo ipsa sed. Beatae, blanditiis eligendi quasi temporibus facilis aliquam? Saepe, id culpa. Labore.</p>
+        </section>
+        
+        <section id="contacto">
+            <form action="https://formspree.io/f/myeybnzv" method="POST">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Leonardo Quiñonez" required minlength="4">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="leonardoquinonez@prtonamil.com" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" maxlength="200" required></textarea>
+            
+            <button type="reset">Limpiar Datos</button>
+            <button type="submit">Enviar</button>
+        </form>
+        </section>
+        
+    </main>
+
+    <footer class="pie_logo">
+        <p>© El Forjador. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
